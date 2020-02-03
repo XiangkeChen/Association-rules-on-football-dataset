@@ -22,6 +22,7 @@ We first analyzed the tables to establish what available features are pertinent 
 
 Prior to running association rules to determine what team/season level characteristics seem to be associated with being in the top three teams in the Serie A league, you can notice in *Exhibit 2* the different distributions in wins, ties, and losses for top three teams versus next three teams for both home and away game. **The primary difference appears to be between a top three team and a next three team in their ability to win home games and not lose away games.**
 ![Exhibit 2](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_2.png)
+
 To verify this assumption holds true we will run association rule testing to see what team/season level characteristics seem to be attributed with being a top three versus a next three team. In order to limit the number of rules and maintain high confidence the rules are indeed related to being a next three or top three team in the league. We set sufficient support, confidence, and lift parameters to limit the number of rules to those most substantiated in the data. The code is seen below.
 
 ## General Findings and Conclusions
