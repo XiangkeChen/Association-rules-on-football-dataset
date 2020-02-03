@@ -10,7 +10,7 @@ With twenty teams in Serie A competing, A.S. Roma has been consistently in conte
 
 ## Approach
 In order to provide actionable insights for A.S. Roma and it’s coaches in what attributes define being a top three Serie A team opposed to a next three ranked (rank four, five, and six) we have tiered our inquiry. First, our analysis digs into the season level and looks for the key characteristics defining being a top three team opposed to the next three team. Despite the results being obvious, they give direction on what to focus on at the match level analysis. Second, we dig into the characteristics of specific matches as defined by the season level generalities to identify how the top three teams are different than the next three. In particular the focus will be on attributes of teams having success against competition which A.S. Roma should be capable of winning. These associations will serve as guidance for coaching to improve A.S. Roma’s probability of being a top three team opposed to a next three.
-![Exhibit 1: A.S. Roma Rank by Season in the Serie A League](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_1.PNG")
+![Exhibit 1: A.S. Roma Rank by Season in the Serie A League](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_1.PNG)
 
 ## Overview of the Data
 
@@ -21,7 +21,7 @@ We first analyzed the tables to establish what available features are pertinent 
 ## General Analysis
 
 Prior to running association rules to determine what team/season level characteristics seem to be associated with being in the top three teams in the Serie A league, you can notice in *Exhibit 2* the different distributions in wins, ties, and losses for top three teams versus next three teams for both home and away game. **The primary difference appears to be between a top three team and a next three team in their ability to win home games and not lose away games.**
-![Exhibit 2](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_2.PNG")
+![Exhibit 2](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_2.png)
 To verify this assumption holds true we will run association rule testing to see what team/season level characteristics seem to be attributed with being a top three versus a next three team. In order to limit the number of rules and maintain high confidence the rules are indeed related to being a next three or top three team in the league. We set sufficient support, confidence, and lift parameters to limit the number of rules to those most substantiated in the data. The code is seen below.
 
 ## General Findings and Conclusions
@@ -32,11 +32,11 @@ The associations as seen in *Exhibit 3* and *Exhibit 4* (see below) are associat
 
 * In *Exhibit 3*, association rules with being a next three team, you notice that teams having an away win record being in the bottom 25th percentile, an away loss record in the top 75th percentile, a medium defensive ability to pressure opponents, and a normal defense formation width are associated with being a next three team. 
 
-![Exhibit 3](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_3.PNG")
+![Exhibit 3](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_3.PNG)
 
 * In *Exhibit 4*, association rules with being a top three team, you notice an association with being in the bottom 50th percentile in away losses, bottom 25th percentile in home losses, and a normal defense formation width are associated with being a top three team. However, some rules are not strong by themselves to define the difference between a top three and next three team. First, the defense team width being normal is the same for being both a top three and next three team therefore being irrelevant for distinguishing the two groups. Second, the defense pressure of “medium” as seen associating with a next three team does not have an opposite association to being a top three team. Meaning we would have expected the top three team to have a defense pressure class association different than a 'medium' ability. Thirdly, for the same reason as the second point the away win record of being in the bottom 25th percentile does not have an opposite analog for the top three teams. Therefore, the obvious association for distinguishing a top three and next three team is the team’s ability to not lose away games as next three teams are in the top 75th to 100th percentile in number of away losses while the top three teams are between the 25th to 50th percentile in number of away losses.
 
-![Exhibit 4](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_4.PNG")
+![Exhibit 4](https://github.com/sampadasathe/Association-rules-on-football-dataset/blob/master/exhibit_4.PNG)
 
 ## Contributors:
 1. Michael Thompson
